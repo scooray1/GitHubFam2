@@ -14,8 +14,8 @@ public class Farmer2 {
 		noOfAnimals = _noOfAnimals;
 	}
 	
-	public void addAnimalType( String type){
-		animalTypes.add( type );
+	public boolean addAnimalType( String type){
+		return (animalTypes.add( type ));
 	}
 	public String getLocation(){
 		return location;
@@ -25,6 +25,13 @@ public class Farmer2 {
 	}
 	public int getNoOfAnimals(){
 		return noOfAnimals;
+	}
+	public boolean isItAnAnimalType( String an){
+		if (animalTypes.contains(an)){
+			return true;
+		}
+		else
+			return false;
 	}
 	
 	
@@ -37,6 +44,20 @@ public class Farmer2 {
 		// TODO Auto-generated method stub
 		Farmer2 f = new Farmer2( "Stefan Cooray", "4, Opel St, Dandenong", 35);
 		System.out.println( f.toString());
+		System.out.println("\n\n\n");
+		f.addAnimalType("Dog");
+		f.addAnimalType("Cattle");
+		f.addAnimalType("Horse");
+		if( f.isItAnAnimalType("Horse")){
+			System.out.println("Horse, animal type");
+		}
+		if( f.isItAnAnimalType("Cattle")){
+			System.out.println("Horse, animal type");
+		}
+		if( f.isItAnAnimalType("Dog")){
+			System.out.println("Horse, animal type");
+		}
+		
 
 	}
 
