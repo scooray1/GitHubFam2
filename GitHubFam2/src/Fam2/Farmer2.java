@@ -12,6 +12,7 @@ public class Farmer2 {
 		name = _name;
 		location = _location;
 		noOfAnimals = _noOfAnimals;
+		animalTypes = new ArrayList<String>();
 	}
 	
 	public boolean addAnimalType( String type){
@@ -44,7 +45,7 @@ public class Farmer2 {
 		// TODO Auto-generated method stub
 		Farmer2 f = new Farmer2( "Stefan Cooray", "4, Opel St, Dandenong", 35);
 		System.out.println( f.toString());
-		System.out.println("\n\n\n");
+		System.out.println("\n");
 		f.addAnimalType("Dog");
 		f.addAnimalType("Cattle");
 		f.addAnimalType("Horse");
@@ -52,10 +53,10 @@ public class Farmer2 {
 			System.out.println("Horse, animal type");
 		}
 		if( f.isItAnAnimalType("Cattle")){
-			System.out.println("Horse, animal type");
+			System.out.println("Cattle, animal type");
 		}
 		if( f.isItAnAnimalType("Dog")){
-			System.out.println("Horse, animal type");
+			System.out.println("Dog, animal type");
 		}
 		
 
