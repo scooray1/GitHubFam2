@@ -43,7 +43,8 @@ public class Farmer2 {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Farmer2 f = new Farmer2( "Stefan Cooray", "4, Opel St, Dandenong", 35);
+		Farmer2 f = new Farmer2( "Stefan Cooray", " 4, Opel St, "
+				+ " Dandenong", 35);
 		System.out.println( f.toString());
 		System.out.println("\n");
 		f.addAnimalType("Dog");
@@ -58,6 +59,10 @@ public class Farmer2 {
 		if( f.isItAnAnimalType("Dog")){
 			System.out.println("Dog, animal type");
 		}
+		Farmer2 mF = new MilkFarmer2("Sunil Cooray", "3, Bonar Crt, "
+				+ "Endeavour Hills", 30, 20);
+		//System.out.println( "Cost of Milk is: ", mF.costOfMilk());
+		System.out.println( mF.toString());
 		
 
 	}
